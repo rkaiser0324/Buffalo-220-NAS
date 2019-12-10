@@ -11,11 +11,11 @@
 #
 
 
-IP=10.0.0.108
+IP=192.168.1.127
 
-ADMIN_PASS=Pah7zo3echae
+ADMIN_PASS=password
 
-#MAC=dc:fb:02:ff:ff:ff
+MAC=cc:e1:d5:a6:0d:5d
 
 if [ -n "$MAC" ]; then
 	java -jar acp_commander.jar  -q -t ${IP} -ip ${IP} -m ${MAC} -pw ${ADMIN_PASS} -c "$*"
